@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>typeof</title>
+</head>
+<body>
+<h2>Typeof operator:</h2>
+<p>The "typeof" operator is used to sought the datatype of its operand. The operand can be either literal or data structure such as a variable,a function or an object.The possible values that typeof operator can return are:</p>
+<ul>
+<li>"number"</li>
+<li>"string"</li>
+<li>"boolean"</li>
+<li>"object"</li>
+<li>"function"</li>
+<li>"undefined"</li>
+</ul>
+<h2>Syntax</h2>
+<p> typeof[(expression)]; -- The parenthesis are optional in typeof syntax</p>
+<h2>Examples:</h2>
+<ul>
+<li>typeof 40 === 'number';</li>
+<li>typeof(2.1)==='number';</li>
+<li>typeof "book"==='string';</li>
+<li>typeof true==='boolean';</li>
+<li>typeof [1,2,3]==='object';</li>
+<li>typeof undefined==='undefined';</li>
+<li>typeof function(){}==='function';</li>
+<h2>Output</h2>
+<script>
+var a=40;
+document.write(typeof(a));
+document.write("<br/>");
+
+var b=2.1;
+document.write(typeof(b));
+document.write("<br/>");
+
+var c="book";
+document.write(typeof(c));
+document.write("<br/>");
+
+var d=true;
+document.write(typeof(d));
+document.write("<br/>");
+
+var e=[1,2,3];
+document.write(typeof(e));
+document.write("<br/>");
+
+var f=undefined;
+document.write(typeof(f));
+document.write("<br/>");
+
+var g=function(){};
+document.write(typeof(g));
+document.write("<br/>");
+
+
+</script>
+</ul>
+
+<h2>References</h2>
+<a href="https://msdn.microsoft.com/en-us/library/259s7zc1(v=vs.94).aspx">msdn</a><br/>
+<a href=" https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof">developer</a><br/>
+<a href="http://www.javascriptkit.com/javatutors/determinevar2.shtml">jskit</a><br/>
+<a href=" http://www.w3resource.com/javascript/operators/typeof.php">w3resource</a><br/>
+<a href="http://www.2ality.com/2012/01/typeof-use-cases.html">2ality</a>
+
+
+</body>
+</html>
+
+

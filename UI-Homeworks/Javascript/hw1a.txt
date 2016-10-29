@@ -1,0 +1,30 @@
+Typeof operator:
+  The "typeof" operator is used to sought the datatype of its operand. The operand can be either literal or data structure such as a variable,a function or an object.The possible values that typeof operator can return are:
+  "number"
+  "string"
+  "boolean"
+  "object"
+  "function"
+  "undefined"
+
+  Syntax:
+  typeof[(expression)]; -- The parenthesis are optional in typeof syntax
+
+  Examples:
+
+ typeof 40 === 'number';
+ typeof(2.1)==='number';
+ typeof "book"==='string';
+ typeof true==='boolean';
+ typeof [1,2,3]==='object';
+ typeof undefined==='undefined';
+ typeof function(){}==='function';
+
+
+ References:
+ https://msdn.microsoft.com/en-us/library/259s7zc1(v=vs.94).aspx
+ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
+ http://www.javascriptkit.com/javatutors/determinevar2.shtml
+ http://www.w3resource.com/javascript/operators/typeof.php
+ http://www.2ality.com/2012/01/typeof-use-cases.html
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Logical Operators</title>
+</head>
+<body>
+<h2>Logical AND & Logical OR:</h2>
+<div>Logical operators are used with Boolean values.That is they can have values true or false. The AND and OR operators actually return the value of one of the specified operands, so if these operators are used with non-Boolean values, they may return a non-Boolean value.</div>
+
+<h3>Logical OR Operator(||):</h3>
+<p>This operatoe returns the first true value it finds. If there is no true value in the statement it returns last value.</p>
+<h4>Example:</h4>
+<p>var x=(10<20 || 10>20) returns first value</p>
+<p>var x=(10>20 || 10<20) returns last value </p>
+<p> var x=(10>20 || 20<10) returns last value</p>
+<script>
+	var x=(10<20 || 10>20);
+	document.write(x);
+	document.write("<br>");
+
+	var y=(10>20 || 10<20)
+   document.write(y);
+	document.write("<br>");
+    
+    var z=(10>20 || 20<10)
+	document.write(z);
+	document.write("<br>");
+</script>
+<h3>Logical AND Operator(&&):</h3>
+<p>This operator returns the first false value it finds. If there is no false value in the statement it returns last value.</p>
+<h4>Example:</h4>
+<p>var x=(10<20 && 10>20) returns last value</p>
+<p>var x=(10>20 && 10<20) returns first value</p>
+<p>var x=(10<20 && 20>10) returns last value</p>
+<script>
+	var x=(10<20 && 10>20);
+	document.write(x);
+	document.write("<br>");
+
+	var y=(10>20 && 10<20)
+   document.write(y);
+	document.write("<br>");
+    
+    var z=(10<20 && 20>10)
+	document.write(z);
+	document.write("<br>");
+</script>
+
+
+
+<h3>References:</h3>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators">developer</a><br/>
+<a href="http://www.w3schools.com/js/js_comparisons.asp">w3schools</a><br/>
+<a href="http://www.quirksmode.org/js/boolean.html">quirksmode</a><br/>
+<a href="http://www.w3resource.com/javascript/operators/logical-operator.php">w3resource</a><br/>
+<a href="http://gregfranko.com/blog/javascript-logical-operators/">gregfranko</a>
+</body>
+</html>

@@ -1,0 +1,37 @@
+Javascript Data Types:
+Javascript provides different datatypes to hold different kind of values. The two types of datatypes in Javascript are:
+1. Primitive Datatype
+2. Non-Primitive(reference) Datatype
+
+Javascript is a dynamice language. Here you need to use var to specify the type of data and dont need to specify type of variable because it is determined automatically while the program is being processed.
+
+There are five types of primitive datatypes in Javascript. They are:
+String
+Number
+Boolean
+Undefined
+Null
+
+The non-primitive datatypes are:
+Object
+Array
+RegExp
+
+Examples:
+var a=10;
+Here the datatype is number
+var name="mrudula"; retuns string
+var b=10 + "m";  returns string
+var c="10"+"m";  retuns string
+var d;  returns undefined
+var e=true; returns boolean
+var num=["1","2","3"] retuns object
+var f=null;  returns object
+
+
+References:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures
+http://www.javatpoint.com/javascript-data-types
+http://www.w3schools.com/js/js_datatypes.asp
+https://msdn.microsoft.com/en-us/library/7wkd9z69(v=vs.94).aspx
+http://archive.oreilly.com/pub/a/javascript/excerpts/learning-javascript/javascript-datatypes-variables.html

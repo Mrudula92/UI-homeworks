@@ -1,0 +1,25 @@
+Logical AND & Logical OR:
+Logical operators are used with Boolean values.That is they can have values true or false. The AND and OR operators actually return the value of one of the specified operands, so if these operators are used with non-Boolean values, they may return a non-Boolean value.
+
+Logical OR Operator(||):
+This operatoe returns the first true value it finds. If there is no true value in the statement it returns last value.
+Example:
+var x=(10<20 || 10>20) returns first value
+var x=(10>20 || 10<20) returns last value
+var x=(10>20 || 20<10) returns last value
+
+Logical AND Operator(&&):
+This operator returns the first false value it finds. If there is no false value in the statement it returns last value.
+Example:
+var x=(10<20 && 10>20) returns last value
+var x=(10>20 && 10<20) returns first value
+var x=(10<20 && 20>10) returns last value
+
+
+
+References:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators
+http://www.w3schools.com/js/js_comparisons.asp
+http://www.quirksmode.org/js/boolean.html
+http://www.w3resource.com/javascript/operators/logical-operator.php
+http://gregfranko.com/blog/javascript-logical-operators/

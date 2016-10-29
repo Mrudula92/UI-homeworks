@@ -1,0 +1,29 @@
+Truthy or Falsy Values:
+
+JavaScript supports boolean data types and values that can be set to true or false. Everything in JavaScript has an inherent Boolean value, known as either truthy or falsy. 
+
+Falsy Values:
+A falsy value is a value that translates to false when evaluated in a Boolean context.
+false
+0(zero)
+""(empty string)
+null
+undefined
+NaN(Not a Number)
+
+Truthy Values:
+A truthy value is a value that translates to true when evaluated in a Boolean context. All values are truthy unless they are defined as falsy.
+true
+all the numbers except 0
+string
+all the objects.Even an empty valu is truthy value.
+[]..empty array
+
+
+
+References:
+https://developer.mozilla.org/en-US/docs/Glossary/Truthy
+https://www.sitepoint.com/javascript-truthy-falsy/
+http://adripofjavascript.com/blog/drips/truthy-and-falsy-values-in-javascript.html
+https://docs.nodejitsu.com/articles/javascript-conventions/what-are-truthy-and-falsy-values/
+http://james.padolsey.com/javascript/truthy-falsey/

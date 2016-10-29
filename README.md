@@ -1,3 +1,0 @@
-# UI-homeworks
-
-mrudula

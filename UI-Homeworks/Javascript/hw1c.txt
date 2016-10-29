@@ -1,0 +1,34 @@
+Operator Precedence:
+It describes the order in which operations are performed when an expression is evaluated. The higher precedence operations are evaluated before lower precedence operations are done. It is particularly used when solving equations. Operators with same precedence are evaluated left to right. Expression evaluation also influenced by operator associativity. Associativity means the direction in which entire expression is evaluated.
+
+Operators and their associativity:
+(),[],.      - Left to Right
+++,--,-,!,~  - Right to Left
+/,*,%        - Left to Right
++,-          - Left to Right
+>>,<<        - Left to Right
+>,>=,<=,<    - Left to Right
+==,!=,===,!== - Left to Right
+&	Bitwise AND	Left to right	
+^	Bitwise XOR	Left to right	
+|	Bitwise OR	Left to right	
+&&	Logical AND	Left to right	
+||	Logical OR	Left to right	
+?:	
+=               Right to Left
+*=, /=, %=, +=  Right to left
+
+Examples:
+
+3+4*5  returns 23
+
+(10+20)*3+5 returns 95
+
+5+20%4 retuns 5
+
+References:
+https://msdn.microsoft.com/en-us/library/z3ks45k7(v=vs.94).aspx
+https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+http://stackoverflow.com/questions/11157814/which-logic-operator-takes-precedence
+http://www.scriptingmaster.com/javascript/operator-precedence.asp
+http://www.w3schools.com/js/js_arithmetic.asp
