@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homework-13</title>
+</head>
+<body>
+	    <script>
+ 		var college="UCM";
+ 		var student={
+ 			name:"Mrudula",
+ 			age:23,
+ 			college:"OU",
+ 			getcollege:function(){
+ 				return this.college;
+ 			}
+ 		}
+ 		console.log(student.college);
+
+ 		var student1=student.getcollege;
+ 		console.log(student1());
+ 		console.log(student1.call(student));
+ 		console.log(student1.apply(student));
+
+
+ 		function add(x,y){
+ 			return this.c + this.d + x + y;
+ 		}
+ 		var obj={
+ 			c:1,
+ 			d:2
+ 		}
+ 		console.log(add.call(obj,3,4));
+ 		console.log(add.apply(obj,[3,4]));
+ 			var newobj=add.bind(obj);
+ 			console.log(newobj(2,2));
+
+ 		
+  		</script>
+
+
+</body>
+</html>
+
+
+
+
+

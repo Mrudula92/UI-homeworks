@@ -1,0 +1,18 @@
+Constructor? and new key word? why do we use it?
+A constructor is used when we want to create multiple similar objects with the same properties and methods.Constructors are like regular functions, but we use them with "new" keyword.This "new" keyword is used to create new objects.
+
+instanceof:
+The instaceof operator returns a boolean value,that is it returns true if object is an instance of specified object.
+
+prototype:
+A prototype is an object from which other objects inherit properties. Every object has a prototype by default. It is defined outside of the function.
+
+this:
+"this" always refers to the "owner" of the function we are executing, or to the object that a function is method of.
+
+References:
+http://javascriptissexy.com/javascript-prototype-in-plain-detailed-language/
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype
+https://css-tricks.com/understanding-javascript-constructors/
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
+http://www.quirksmode.org/js/this.html

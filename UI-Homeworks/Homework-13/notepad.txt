@@ -1,0 +1,4 @@
+java script call apply bind methods? how to use them? what are the use cases when we have to use them?
+call(): Using call we can get the local variable and the values are passed one by one
+apply(): This also same as call but the values are passed as arrays
+bind(): Using bind we cannot pass values directly.Instead object is created.

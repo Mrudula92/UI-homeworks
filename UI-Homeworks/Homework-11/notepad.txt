@@ -1,0 +1,76 @@
+Explain about arr.forEach and arr.map . compare the differences?
+forEach: This method will invoke the function for every item in the array.
+Syntax: arr.forEach(function(item,index,arrRef){
+	    //code to be executed
+        });
+item represents item in the array;
+index represents index value of current item when function is executed;
+arrRef represents array value
+map:This method also invokes the function for every item in the array same as forEach but the main difference is it returns the value.It will create a new array with the returned values.
+Syntax:arr.map(function(item,index,arrRef){
+	    //code to be executed
+	    return index : item;
+        });
+
+References:
+http://stackoverflow.com/questions/354909/is-there-a-difference-between-foreach-and-map
+http://stackoverflow.com/questions/7340893/what-is-the-difference-between-map-every-and-foreach
+https://hashnode.com/post/what-is-the-difference-between-map-and-foreach-in-javascript-ciibz8ek700nuj3xtywxndnj8
+https://ryanpcmcquen.org/javascript/2015/10/25/map-vs-foreach-vs-for.html
+https://medium.com/@prufrock123/foreach-map-in-javascript-3381017a6155#.yl8js8p26
+
+Object and Object methods (.hasOwnProperty(item))
+Objects are composed of attributes. If an attribute contains a function, it is considered to be a method of the object, otherwise the attribute is considered a property.
+
+
+
+Different ways of creating an object:
+There are different ways to create new objects:
+ 1. Using object literal: Using this you can define and create an object in one statement.
+An object literal is a list of name:value pairs inside curly braces {}.
+Example: var Employee={
+	         E1:"Mrudula",
+	         salary:100000,
+	         age:23,
+             };
+2. Using Javascript Keyword new: In this we will use new object.
+Example: var e=new Object();
+		 e.Name="Mrudula";
+		 e.salary=100000;
+		 e.age=23;
+
+3.Using an Object Constructor: The above two ways creates only a single object. We use object constructor function to create an "object type" that can be used to create objects of one type.
+Example:function employee(Name,Sal,Age){
+	            this.EmpName=Name;
+	            this.Salary=Sal;
+	            this.EmpAge=Age;
+                }
+         var Employee1 = new employee();
+         var Employee2= new employee();  
+
+References:
+http://www.w3schools.com/js/js_object_definition.asp
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects
+http://www.howtocreate.co.uk/tutorials/javascript/objects
+http://stackoverflow.com/questions/6843951/which-way-is-best-for-creating-an-object-in-javascript-is-var-necessary-befor
+http://javascriptissexy.com/javascript-objects-in-detail/
+
+Properties in Object:
+Properties are the values associated with a Javascript objects. We can usually Add a property, Delete a property, Edit a property and check if property exists.
+Adding new properties: We can add new properties to an existing object by simply giving it a value.
+Example: If an employee object already exists having properties name, age, salary then we can add new property designation b giving value.
+employee.designation="ui developer"
+Deleting properties:We can delete a property from the existing object by using delete keyword.
+Example:delete employee.age;
+In order to check if a property exists we use .hasOwnProperty(). It returns true if property exists or else it returns false.
+Example:employee.hasOwnProperty(age);
+We can edit the property value by giving new value to the property
+Example:employee.age=24;
+
+References:
+http://www.dyn-web.com/tutorials/object-literal/properties.php
+http://www.w3schools.com/js/js_properties.asp
+https://www.nczonline.net/blog/2010/07/27/determining-if-an-object-property-exists/
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects
+http://stackoverflow.com/questions/11040472/check-if-object-property-exists-using-a-variable
+
