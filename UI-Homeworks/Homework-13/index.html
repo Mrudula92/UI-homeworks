@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homework-13</title>
+</head>
+<body>
+	    <script>
+ 		var college="UCM";
+ 		var student={
+ 			name:"Mrudula",
+ 			age:23,
+ 			college:"OU",
+ 			getcollege:function(){
+ 				return this.college;
+ 			}
+ 		}
+ 		console.log(student.college);
+
+ 		var student1=student.getcollege;
+ 		console.log(student1());
+ 		console.log(student1.call(student));
+ 		console.log(student1.apply(student));
+
+
+ 		function add(x,y){
+ 			return this.c + this.d + x + y;
+ 		}
+ 		var obj={
+ 			c:1,
+ 			d:2
+ 		}
+ 		console.log(add.call(obj,3,4));
+ 		console.log(add.apply(obj,[3,4]));
+ 			var newobj=add.bind(obj);
+ 			console.log(newobj(2,2));
+</script>
+<script>
+
+ 			var a="mrudula";
+var asc={
+	a:"siri",
+	b:function(){
+		return this.a;
+	}
+	
+}
+console.log(asc.b());
+var newk=asc.b;
+console.log(newk.call(asc));
+console.log(newk.call({a:"lalli"}));
+console.log(newk.apply({a:"rv"}));
+
+function name(x,y){
+	ln="face";
+	fn="mass";
+	return this.ln + this.fn + x + y;
+}
+
+var obj={ln:'hey',fn:'you'}
+var arr=["gud","girl"]
+console.log(name.call(obj,"gud","girl"));
+console.log(name.apply(obj,arr));
+
+var newname=name.bind(obj);
+console.log(newname("gud","girl"));
+
+
+var company="wipro";
+var employee={
+	Name:"Mrudula",
+	Age:23,
+	company:"Pitney Bowes",
+	Working:function(){
+		return this.company;
+	}
+}
+console.log(employee.Working());
+var working1=employee.Working;
+console.log(working1.call(employee));
+console.log(working1.apply(employee));
+var newemp = working1.bind(employee)
+console.log(newemp())
+
+ 		
+  		</script>
+
+
+</body>
+</html>
+
+
+
+
+

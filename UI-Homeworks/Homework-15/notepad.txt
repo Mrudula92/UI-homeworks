@@ -1,0 +1,20 @@
+ what is event propagation?
+ Event propagation is a way of defining the element order when an event occurs. When you are having a parent and child elements and when you are trying to listen same eventType on both elments then even propagation will happen when event is performed.
+ The two ways of event propagation in HTML DOM are
+ 1)Bubbling
+ 2)Capturing
+ Event Bubbling:In bubbling the inner most element's event is handled first and then the outer
+ i.e.,child event handler is invoked first and then the parent event handler is invoked
+ Event Capturing:In capturing the outer most element's event is handled first and then the inner
+ i.e., theparent event handler is invoked first and then the child event handler is invoked.
+ If the captureFlag is not given or given false then event bubbling occurs by default. When it is given true event capturing occurs.It should be given in parent element.
+
+
+event.stopPropagation
+When it is given in case of bubbling only child event handler is invoked and when it is given in case of capturing parent event handler is invoked
+
+event.stopImmediatePropagation
+When it is given this will invoke last event handler.
+
+References:
+http://www.w3schools.com/js/js_htmldom_eventlistener.asp

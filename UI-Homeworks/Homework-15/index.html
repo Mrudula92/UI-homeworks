@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homework-15</title>
+</head>
+<body>
+	<div id="1" style="border:1px solid black">this is div parent
+		<p id="2" style="border:1px solid red">this is child para 1
+			<span id="3" style="border:1px solid green">this is span 1</span>
+		</p>
+		<p id="2">this is child para 2</p>
+		<p id="2">this is child para 3</p>
+	</div>
+	<script>
+		document.getElementById("2").addEventListener("click",function(event){
+			event.stopPropagation();
+			console.log("child 1 is invoked")
+			
+		},true)
+		document.getElementById("3").addEventListener("click",function(event){
+			//event.stopPropagation();
+			console.log("grand child is invoked")
+			
+		})
+		document.getElementById("2").addEventListener("click",function(event){
+			console.log("child 2 is invoked")
+			//event.stopPropagation();
+		})
+		document.getElementById("2").addEventListener("click",function(event){
+			console.log("child 3 is invoked")
+			//event.stopPropagation();
+		})
+		document.getElementById("1").addEventListener("click",function(event){
+				//event.stopPropagation()
+				console.log("parent is invoked")
+		},true)
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Homework-14</title>
+	</head>
+	<body>
+		<p class="2">This is an example</p>
+		<p>This is an example2</p>
+			<ul>
+				<li>Example1</li>
+				<li>Example2</li>
+				<li>Example3</li>
+			</ul>
+		<button onclick="Exam()">Try</button>
+		<p id="M">This is an example3.</p>
+
+		
+		<script>
+		function Exam(){
+			var x=document.getElementsByTagName("p");
+			x[1].style.backgroundColor="red";
+			document.getElementById("M").innerHTML=x[1].innerHTML;
+			var y=document.getElementsByClassName("2");
+			y[0].style.backgroundColor="green";
+			y[0].style.fontStyle="italic";
+			var z=document.querySelectorAll("ul");
+			z[0].style.color="blue";
+			
+		}
+		
+		</script>
+	<h2>Event Listener</h2>
+	<p id="1" onclick="Display()">Click Me</p>
+	<p onmouseover="mov(this)" onmouseout="mot(this)" style= "border:1px solid black">Hello</p>
+		<script>
+			function Display(){
+				document.getElementById("1").innerHTML="Here I am";
+			}
+			function mov(x){
+				x.innerHTML="Welcome";
+			}
+			function mot(x){
+				x.innerHTML="Bye!!";
+
+			}
+			
+
+
+		</script>
+		
+
+	</body>
+</html>

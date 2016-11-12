@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div onclick="func1()">This is a div</div>
+<div oncontextmenu="func2()">This is para</div>
+<div id="divID">this is div 3</div>
+<label>Select</label>
+	<select>
+		<option id="id-1">Dress</option>
+		<option id="id-2">goggles</option>
+		<option id="id-3">Shoes</option>
+	</select>
+	<script>
+		 
+
+	var sel = document.getElementsByTagName('select');
+	sel[0].addEventListener('change', function()
+		{
+			var val = this.value;
+			console.log('You selected ' + val);	
+	});
+
+		function func1(){
+			console.log('You hav clicked');
+		}
+		function func2(){
+			console.log('You hav right clicked');
+		}
+		document.getElementById("divID").addEventListener("click",function(){
+			console.log("you hav clicked using ID")
+		})
+		document.getElementsByTagName("div")[0].addEventListener("click",function(){
+			console.log(" clicked using ID")
+
+		})
+		
+	</script>
+</body>
+</html>

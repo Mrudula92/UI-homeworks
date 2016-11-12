@@ -1,0 +1,134 @@
+ Operational Precedence:
+ It describes the order in which operations are performed when an expression is evaluated. The higher precedence operations are evaluated before lower precedence operations are done. It is particularly used when solving equations. Operators with same precedence are evaluated left to right. Expression evaluation also influenced by operator associativity. Associativity means the direction in which entire expression is evaluated.
+
+Operators and their associativity:
+(),[],.      - Left to Right
+++,--,-,!,~  - Right to Left
+/,*,%        - Left to Right
++,-          - Left to Right
+>>,<<        - Left to Right
+>,>=,<=,<    - Left to Right
+==,!=,===,!== - Left to Right
+&	Bitwise AND	Left to right	
+^	Bitwise XOR	Left to right	
+|	Bitwise OR	Left to right	
+&&	Logical AND	Left to right	
+||	Logical OR	Left to right	
+?:	
+=               Right to Left
+*=, /=, %=, +=  Right to left
+
+Examples:
+
+3+4*5  returns 23
+
+(10+20)*3+5 returns 95
+
+5+20%4 retuns 5
+
+References:
+https://msdn.microsoft.com/en-us/library/z3ks45k7(v=vs.94).aspx
+https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+http://stackoverflow.com/questions/11157814/which-logic-operator-takes-precedence
+http://www.scriptingmaster.com/javascript/operator-precedence.asp
+http://www.w3schools.com/js/js_arithmetic.asp
+
+
+
+Differences between == and === and differences between != and !==
+These are the comparision operators which are used to find equality or difference between variables or values.
+Equality(==) operator converts the operands which are not of same datatype,then applies comparision and returns true whereas the Identity(===) operator does not convert the operands of different datatypes and returns false value. In simple terms when we are using == it checks only equality of operands and not datatypes and when we use === it checks both equality of operands as well as datatype
+
+Inequality (!=) operator converts the operands of different datatypes and returns true if operands are not equal whereas Non-Identity(!==)
+does not convert operands of different datatypes and returns true if the operands are not equal and/or not of the same type. In simple terms != checks only inequality of operands whereas !== checks inequality of operands as well as datatype
+
+Examples:
+
+3=='3'  // returns true
+3==='3' // returns false
+3==4  //returns false
+
+3!='3' //returns false
+3!=='3'//returns true
+3!==4  //returns true
+3!=4 //returns true
+
+References:
+https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Comparison_Operators
+http://www.java67.com/2013/07/difference-between-equality-strict-vs-operator-in-JavaScript-Interview-Question.html
+https://www.quora.com/What-is-a-difference-between-jQuery-and-JavaScript
+https://www.codecademy.com/en/forum_questions/558ea4f5e39efed371000508
+http://www.w3schools.com/js/js_comparisons.asp
+
+Differences between null and undefined
+Undefined means a variable which has been declared but has not assigned a value. On the other hand, null is an assignment value. It can be assigned to a variable as a representation of no value.
+Also, undefined and null are two distinct types: 
+typeof undefined is undefined while typeof null is an object.
+Unassigned variables are initialized by JavaScript with a default value of undefined. JavaScript never sets a value to null. That must be done programmatically.
+
+Examples:
+
+var employee;       //value is undefined and type is undefined
+var employee=null;  //value is null and type is object
+
+References:
+http://www.ajaymatharu.com/javascript-difference-between-undefined-and-null/
+https://www.quora.com/What-is-the-difference-between-undefined-and-null-in-JavaScript
+http://stackoverflow.com/questions/5076944/what-is-the-difference-between-null-and-undefined-in-javascript
+http://www.w3schools.com/js/js_datatypes.asp
+http://www.tothenew.com/blog/difference-between-undefined-and-null-in-javascript/
+
+LOOPS:
+
+for: This loop is executed till a specified condition returns false. It has basically the same syntax as in other languages. It takes 3 arguments like initialization, condition and increment.
+Syntax: for (initialization; condition; increment) 
+
+            {
+               // code to be executed
+            }
+while: This is the mostly used loop after For loop. The while statement repeats a loop as long as a specified condition evaluates to true. If the condition becomes false, the statements within the loop stop executing and control passes to the statement following the loop.
+Syntax: while(condition)
+         {
+            //code to be executed
+         }
+do while: This statement repeats until a specified condition evaluates to false. In this the statement gets executedonce before checking the condition.
+Syntax: do{
+		//code to be executed
+		}while(condition);
+
+References:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#do...while_statement
+https://www.tutorialspoint.com/javascript/javascript_for_loop.htm
+http://www.w3schools.com/js/js_loop_for.asp
+http://webcheatsheet.com/javascript/loops.php
+http://www.tizag.com/javascriptT/javascriptfor.php
+
+Conditions:
+
+if else: The If statement executes the statement if condition is true or it will execute the else statement
+Syntax:if(condition){
+	    //statement to be executed
+        }
+        else{
+        //statement to be executed
+        }
+switch: The switch statement is used to perform different actions based on different conditions.In this the expression is evaluated first. If the expression value matches value of case then the block of statements in that case will be executed. break must be used to switch to different case.
+Syntax:switch(expression){
+       case 1:
+       	//block of statements;
+       	break;
+       case 2:
+        //block of statements;
+        break;
+       default:
+        //default statement;
+       break;
+       }
+
+References:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch
+http://www.javascriptkit.com/javatutors/switch.shtml
+https://www.tutorialspoint.com/javascript/javascript_ifelse.htm
+http://www.w3schools.com/js/js_switch.asp
+http://www.tutorialspoint.com/javascript/javascript_switch_case.htm
+  
