@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -106,4 +107,114 @@
 
 </script>
 </body>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homework-10</title>
+</head>
+<body>
+<h3>Logical OR</h3>
+	<script>
+	 var x=(10<20 || 10>20);
+	 document.write(x + "<br>");
+     var y=(10>20 || 10<20);
+      document.write(y + "<br>");
+     var z=(10>20 || 20<10);
+      document.write(z + "<br>");
+    </script>
+<h3>Logical AND</h3>
+	<script>
+	var x=(10<20 && 10>20);
+	 document.write(x + "<br>");
+    var y=(10>20 && 10<20);
+     document.write(y + "<br>"); 
+	var z=(10<20 && 20>10);
+	 document.write(z + "<br>");
+	</script>
+<h3>String Methods</h3>
+    <script>
+    var x = "Program";
+    var y=x.charAt(1);
+    document.write(y + "<br>");
+    var z=x.charCodeAt(1);
+    document.write(z + "<br>");
+    var e="files";
+    var d=x.concat(" ",e);
+    document.write(d + "<br>");
+    var i = "Hi this is Mrudula and Mrudula";
+    var h = i.indexOf("Mrudula");
+    document.write(h + "<br>");
+    var h = i.lastIndexOf("Mrudula");
+    document.write(h + "<br>");
+    var h2=i.search("Mrudula");
+    document.write(h2 + "<br>");
+    var h3=i.slice(3,7);
+    document.write(h3 + "<br>");
+    var h3=i.slice(3);
+    document.write(h3 + "<br>");
+    var h3=i.slice(-7);
+    document.write(h3 + "<br>");
+
+    var h4=i.substring(3,7);
+    document.write(h4 + "<br>");
+
+    var h3=i.substr(3,7);
+    document.write(h3 + "<br>");
+    var h3=i.replace(/Mrudula/g,"Siri");
+    document.write(h3 + "<br>");
+    var h3=i.toUpperCase();
+    document.write(h3 + "<br>");
+    var h3=i.toLowerCase();
+    document.write(h3 + "<br>");
+    var t="nice";
+    var t1=t.split("");
+    var t2="";
+    var i;
+    for(i=0;i<t1.length;i++){
+    	t2 += t1[i] + "<br>";
+    }
+    document.write(t2);
+</script>
+<h3>Array Methods:</h3>
+<script>
+   var x=["Mrudula","Siri"];
+   var y=["Venky","Lalli"];
+   var z=x.concat(y);
+      document.write(z + "<br>");
+      console.log(z);
+    var y1=z.pop();
+       document.write(y1 + "<br>");
+     var x1=["Mrudula","Siri"];
+    var y2=x1.push("Lalli");
+       document.write(y2 + "<br>");
+       document.write(x1 + "<br>");
+    var x= ["Mrudula","Siri","Venky","Lalli"];
+	var y=x.shift();
+
+       document.write(y + "<br>");
+    var x= ["Siri","Venky","Lalli"];
+	var y=x.unshift("Mrudula");
+	   document.write(y + "<br>");
+	   document.write(x + "<br>");
+	var x1= ["Siri","Venky","Lalli"];
+	var y1=x1.splice(1,0,"Mrudula");
+	    document.write(x1 + "<br>");
+	var y1=x1.splice(1,1);
+	     document.write(x1 + "<br>");
+	var x= ["Mrudula","Siri","Venky","Lalli"];
+     var y=x.slice(1,2);
+     	document.write(y + "<br>");
+     var y=x.slice(2);
+     	document.write(y + "<br>");
+     var x= ["Mrudula","Siri","Venky","Lalli"];
+     var y=x.reverse();
+         document.write(y + "<br>");
+      var x= ["Mrudula","Siri","Venky","Lalli"];
+      var y=x.join("&");
+      document.write(y);
+
+</script>
+</body>
+>>>>>>> b4794c10c116b7ef81f65e64feb7ab844a6bbed3
 </html>

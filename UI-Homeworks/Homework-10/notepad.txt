@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Logical AND & Logical OR:
 Logical operators are used with Boolean values.That is they can have values true or false. The AND and OR operators actually return the value of one of the specified operands, so if these operators are used with non-Boolean values, they may return a non-Boolean value.
 
@@ -143,3 +144,150 @@ https://benfrain.com/understanding-native-javascript-array-methods/
 
 
 
+=======
+Logical AND & Logical OR:
+Logical operators are used with Boolean values.That is they can have values true or false. The AND and OR operators actually return the value of one of the specified operands, so if these operators are used with non-Boolean values, they may return a non-Boolean value.
+
+Logical OR Operator(||):
+This operatoe returns the first true value it finds. If there is no true value in the statement it returns last value.
+Example:
+var x=(10<20 || 10>20) returns first value
+var x=(10>20 || 10<20) returns last value
+var x=(10>20 || 20<10) returns last value
+
+Logical AND Operator(&&):
+This operator returns the first false value it finds. If there is no false value in the statement it returns last value.
+Example:
+var x=(10<20 && 10>20) returns last value
+var x=(10>20 && 10<20) returns first value
+var x=(10<20 && 20>10) returns last value
+
+
+References:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators
+http://www.w3schools.com/js/js_comparisons.asp
+http://www.quirksmode.org/js/boolean.html
+http://www.w3resource.com/javascript/operators/logical-operator.php
+http://gregfranko.com/blog/javascript-logical-operators/
+
+String Methods:
+These are used when working with strings.
+1. charAt(): This method returns the character at a specific index or position in a string.
+     var x = "Program";
+     x.charAt(1); //returns r
+
+2. charCodeAt(): This method returns the unicode of the character at a specific index in a string.
+     var y = "Hello";
+     y.charCodeAt(1); //returns 65
+
+3. concat(): This method is used for joining two or more strings.
+     var fname="Mrudula";
+     var lname="Raparthi";
+     var fullname=fname.concat(" ",lname);// returns Mrudula Raparthi
+
+4. indexOf(): This method returns the index(position) of the first occurence of the specified text in a string.
+     var i = "Hi this is Mrudula and Mrudula";
+     var h = i.indexOf("Mrudula")//returns 11
+
+5. lastIndexOf(): This method returns the index of the last occurrence of a specified text in a string.
+     var i = "Hi this is Mrudula and Mrudula";
+     var h = i.indexOf("Mrudula")//returns 23
+
+6. search(): This method searches a string for a specified value and returns the position of the match. It is same as indexOf().
+     var i = "Hi this is Mrudula and Mrudula";
+     var h = i.search("Mrudula")//returns 11
+
+7. slice(): This method extracts a part of a string and returns the extracted part in a new string.This method takes the starting     
+			starting index(position), and the ending index (position). If the second parameter is not given it retuns the rest part. 
+	 var l="Hi this is Mrudula and Mrudula";
+	 var sl=l.slice(3,7); //retuns this
+	 var sl=l.slice(3);// returns this is Mrudula and Mrudula
+	 var sl=l.slice(-7);//returns Mrudula
+
+8. substring(): This method is same as slice() but it cannot take negative values.
+     var l="Hi this is Mrudula and Mrudula";
+	 var sb=l.substring(3,7); //retuns this
+
+9. substr(): This is also same as slice but in this method the second parameter represents the length of the extracted part.
+     var l="Hi this is Mrudula and Mrudula";
+	 var sl=l.slice(3,7); //retuns this is
+
+10.replace(): This method replaces a specified value with another value in a string.
+     var l="Hi this is Mrudula";
+     var t=l.replace("Mrudula","siri");
+     var l="Hi this is Mrudula and Mrudula";
+     var t=l.replace(/Mrudula/g,"siri");
+
+11.toUpperCase(): This method converts a string to upper case.
+     var t1="This is Mrudula";
+     var t2=t1.toUpperCase();//THIS IS MRUDULA
+
+12.toLowerCase(): This method converts a string to upper case.
+     var t1="THIS IS MRUDULA";
+     var t2=t1.toLowerCase();//this is mrudula
+
+13.split():This method converts string to an array.
+     var t="Nice";
+     var a=t.split("");
+
+References:
+http://www.w3schools.com/js/js_string_methods.asp
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+https://www.tutorialspoint.com/javascript/javascript_strings_object.htm
+https://www.sitepoint.com/15-javascript-string-functions/
+https://msdn.microsoft.com/en-us/library/ecczf11c(v=vs.94).aspx
+
+Array Methods:
+1. concat(): This method creates a new array by adding two arrays.
+   var x=["Mrudula","Siri"];
+   var y=["Venky","Lalli"];
+   var z=x.concat(y);
+2. pop(): This method removes the last element from an array and returns the value that was "popped out".
+	var x= ["Mrudula","Siri","Venky","Lalli"];
+	var y=x.pop();//returns Lalli
+3. push() : This method adds an element at the end of an array.
+    var x= ["Mrudula","Siri","Venky"];
+    var y=x.push("Lalli");// returns 4
+    var x;//Adds Lalli at end
+4. shift() : This method removes the first array element and moves other elements to a lower index.
+    var x= ["Mrudula","Siri","Venky","Lalli"];
+	var y=x.shift();//removes Mrudula
+5. unshift(): This method adds a new element to the array at the begining and unshifts other elements.
+    var x= [Siri","Venky","Lalli"];
+	var y=x.unshift();//adds Mrudula at the beginning
+6. splice(): This method can be used to add new elements to an array.
+    var x= ["Siri","Venky","Lalli"];
+	var y=x.splice(0,0,"Mrudula");//Adds Mrudula
+	var y=x.splice(0,1)// removes siri
+	first element represents position where new elements are added
+	second element represents how many elements are removed
+7. slice():This method slices out an array into a new array
+     var x= ["Mrudula","Siri","Venky","Lalli"];
+     var y=x.slice(1,2);//slices out siri
+     var y=x.slice(2);//slices out venky,lalli
+8. reverse(): This method reverses the elements in an array.
+     var x= ["Mrudula","Siri","Venky","Lalli"];
+     var y=x.reverse();//reverses order
+9. foreach():
+10. map()
+11.join(): This method joins all array elements into a string. It behaves just like toString() but in this you can specify a separator.
+      var x= ["Mrudula","Siri","Venky","Lalli"];
+      var y=x.join("&");// returns Mrudula & Siri & Venky & Lalli
+
+References:
+http://www.w3schools.com/js/js_array_methods.asp
+https://www.tutorialspoint.com/javascript/javascript_arrays_object.htm
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+http://speakingjs.com/es5/ch18.html
+https://benfrain.com/understanding-native-javascript-array-methods/
+
+
+
+
+
+
+
+
+
+
+>>>>>>> b4794c10c116b7ef81f65e64feb7ab844a6bbed3

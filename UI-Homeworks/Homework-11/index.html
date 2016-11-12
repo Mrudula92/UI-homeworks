@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -97,4 +98,105 @@ var a3=a1.map(function(item,index){
 
 
 </body>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homework-11</title>
+</head>
+<body>
+<h3>forEach</h3>
+<script>
+var a=[1,2,3]
+var a1=a.forEach(function()
+{
+	for(i=0;i<3;i++)
+	
+	a[i]=a[i]+1;
+	document.write(a + "<br>");
+
+
+});	
+	
+
+
+</script>
+<h3>map</h3>
+<script>
+var b=[1,2,3]
+var b1=b.map(function()
+{
+	for(i=0;i<3;i++)
+	{
+	b[i]=b[i]+1;
+	document.write(b + "<br>");
+	}
+	return b;
+
+
+});	
+
+</script>
+<h3> Difference between forEach and map</h3>
+<script>
+var a1=["Mrudula","Siri","Lally","Venky"];
+var a2= a1.forEach(function(item,index){
+    console.log(item +' ' +'is assigned' + ' '+index);
+});
+
+var a3=a1.map(function(item,index){
+	a4=item +' ' +'is assigned' + ' '+index;
+	return(a4);
+});
+
+</script>
+<h3>Ways of creating an Object</h3>
+
+<script >
+	var emp={firstName:"Mrudula",lastName:"Raparthi",age:23};
+	console.log(emp);
+
+    var emp1=new Object();
+    emp1.fname="Mrudula";
+    emp1.lname="Raparthi";
+    emp1.age=23;
+    console.log(emp1);
+
+    function emp3(fname,lname,age){
+    	this.firstname=fname;
+    	this.lastname=lname;
+    	this.empage=age;
+    }
+    var emp4=new emp3("Mrudula","Raparthi",23);
+    var emp5=new emp3("siri","Raps",19);
+    console.log(emp4);
+    console.log(emp5);
+	
+</script>
+<h3>Object Properties</h3>
+<script>
+    var emp={
+    	fname:"Mrudula",
+    	lname:"Raparthi",
+    	age:23
+    };
+    console.log(emp);
+    //Adding
+    emp.salary=1000;
+    console.log(emp);
+    //delete
+    delete emp.salary;
+    console.log(emp);
+    //edit
+    emp.lname="Raps";
+    console.log(emp);
+    //check
+  console.log(emp.hasOwnProperty("age"));
+    console.log(emp.hasOwnProperty("salary"));
+</script>
+
+
+
+</body>
+>>>>>>> b4794c10c116b7ef81f65e64feb7ab844a6bbed3
 </html>
