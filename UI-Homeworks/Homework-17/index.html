@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Homework-17</title>
+	</head>
+	<body>
+	<div>This is div 1
+		<p>this is para 1
+			<span>this is span1</span>
+			<span>this is span2</span>
+		</p>
+	</div>
+	<div>This is div 2
+		<p>this is para 2
+			<span>this is span2</span>
+		</p>
+	</div>
+	<div>This is div 3
+		<p>this is para 3</p>
+	</div>
+	<div>This is div 4</div>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script> 
+	<script>
+		/*$("div").bind("click",function(event){
+			alert(event.target.innerHTML)
+		})
+			for (var i=0;i<document.getElementsByTagName("div").length;i++){
+			document.getElementsByTagName("div")[i].addEventListener("click",function(event){
+				alert(event.target.innerHTML)
+
+			})
+		}
+		 $("body").on("click","div",function(event){
+		 	alert(event.target.innerHTML)
+		 })*/
+		 document.getElementsByTagName("body")[0].addEventListener("click",function(event){
+		 	if (event.target.tagName=="DIV"){
+		 		alert(event.target.innerHTML)
+		 	}
+		 })
+
+	</script>
+	
+
+	</body>
+</html>

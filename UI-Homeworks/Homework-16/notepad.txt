@@ -1,1 +1,13 @@
-what is jQuery
+What is event delegation?
+Event delegation is a simple technique where you will add a event listener to a parent element instead of adding it to multiple child elements.
+
+what is jQuery?why do we use jquery?
+jQuery is a javascript library used to simplify various tasks by writing less lines of code. It simplifies HTML document traversing, event handling, animations, and AJAX interactions for web development.
+
+$(document).ready vs window.onload?
+$(document).ready is a jQuery event to be triggered after the HTML document has been loaded whereas onload is a built-in DOM event to be triggered after all content has been loaded.
+So the ready event would normally fire earlier than the onload event, allowing code execution as early as possible without having to wait for all assets to be fully loaded.
+
+what is $?
+A $ is used to define/access jQuery.
+Syntax is: $(selector).action()
