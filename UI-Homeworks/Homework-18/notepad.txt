@@ -1,0 +1,22 @@
+1) http status codes in restful web services
+
+1xx: These codes starting with 1 are used to provide information Eg: 100 for continue, 102 for processing and so on
+2xx: These codes are used to represent success Eg: 200 for OK, 201 for Created, 202 for Accepted and so on
+3xx: These codes are used to show redirection. Eg: 303- see other, 305- use proxy and so on
+4xx: These are mainly for client errors like 400:bad request,401:Unauthorized and so on
+5xx: These are for server errors like 500: internal server error, 501: not implemented and so on
+
+2) Angular JS --> MVC, MVVM (Data binding)
+
+Data Binding: It is the process for providing a connection between application UI and business logic. It can be one time data binding or two way data binding.
+One time data binding is stable. Once the value is given it remains stable. It allows model or view to be updated once from te value setby the controller whereas two way data binding provides ability to effortlessly take the value of a property on scope and change it in view .
+
+MVVM:
+M stands for model. It is used to hold data.
+V stands for View. It is used to show information of dom(html)
+VM stands for View Model. It is used to identify the changes in either view or model and synchronize the changes between them.
+
+MVC:
+M stands for model. It is used to hold data.
+V stands for View. It is used to show information of dom(html)
+C stands for controller. It is used to create child scope , we can define actions which needds to be triggered from view.

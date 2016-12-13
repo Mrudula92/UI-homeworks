@@ -1,0 +1,7 @@
+ One time data binding & two way data binding
+Data Binding: It is the process for providing a connection between application UI and business logic. It can be one time data binding or two way data binding.
+One time data binding is stable. Once the value is given it remains stable. It allows model or view to be updated once from te value setby the controller whereas two way data binding provides ability to effortlessly take the value of a property on scope and change it in view .
+Syntax for one time data binding is:
+{{::expression}}
+Syntax for two way data binding is:
+{{expression}}
