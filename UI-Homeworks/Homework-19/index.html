@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Homework 19</title>
+	</head>
+	<body>
+	<div ng-app="App2">
+		<div ng-controller="ctrl2">
+			Email ID:<input {{email}}><br/>
+			Phone No:<input {{phone}}><br/>
+			<button ng-click="func()">Add</button>
+		</div>
+		<div ng-controller="ctrl3">
+			Email ID:<input {{email}}><br/>
+			Phone No:<input {{phone}}><br/>
+			<button ng-click="func()">Add</button>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<script>
+		angular.module("App2",[])
+		angular.module("App2").controller("ctrl2",function($scope){
+			$scope.email="Enter your id here"
+			$scope.phone="Enter your number"
+			$scope.func=function(){
+				alert("Added to the database")
+			}
+		})
+		angular.module("App2").controller("ctrl3",function($scope){
+			$scope.email="Enter your id here"
+			$scope.phone="Enter your number"
+			$scope.func=function(){
+				alert("Added to the database")
+			}
+		})
+		
+	</script>
+
+	</body>
+</html>
