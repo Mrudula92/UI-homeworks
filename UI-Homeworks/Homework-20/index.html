@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Homework 20</title>
+	</head>
+	<body>
+		<div ng-app="app6">
+			<div ng-controller="ctrl3">
+			Enter your firstname:<span ng-bind="name"></span><br/>
+			Enter your action:<input ng-model="overwritten">
+			Enter your second action:<input ng-model="same">
+			
+			<dir action="overwritten" attr2="show()">overwite the dir</dir>
+			<dir action="same" attr2="display()"></dir>
+			<dir></dir>
+			
+			</div>
+			
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<script>
+			angular.module("app6",[])
+			angular.module("app6").controller("ctrl3",["$scope",function($scope){
+				$scope.name="Mrudula";
+				$scope.show=function(){
+					alert("I am showing")
+				}
+				$scope.display=function(){
+					alert("I am displaying")
+				}
+
+			}])
+			angular.module("app6").directive("dir",function(){
+				return{
+					restrict:'EAC',
+					template:'<div>action is:{{action}} <button ng-click="attr2()">click me</button><ng-transclude></ngtransclude></div>',
+					transclude:true,
+					//link:function(scope,element,attrs){
+						//element.bind("click",function(){
+						//	alert("clicked")
+						//})
+					//},
+					//scope:{}isolated scope
+					scope:{
+						action:'=',
+						attr2:'&'
+					}
+
+
+
+				}
+				
+
+			})
+			
+		</script>
+
+
+	</body>
+</html>

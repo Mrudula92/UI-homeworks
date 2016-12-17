@@ -1,0 +1,12 @@
+ In a directive -- 
+   Scope -- shared scope, isolate scope, inherited scope
+
+  Shared scope: All directives will share same model which is defined in a template. This is taken by default.
+  Isolated scope: Every directive instance model would be independent.
+  scope:{}
+  In order to read attribute values in a isolate scope we can use 
+  scope:{
+  	attr:'@', -- read a value
+  	attr:'=', -- read value as model
+  	attr:'&'  -- read value as a funtion in reference
+  }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Homework-15</title>
+	<title></title>
 </head>
 <body>
 	<div id="1" style="border:1px solid black">this is div parent
@@ -18,23 +18,10 @@
 			
 		})
 		document.getElementById("3").addEventListener("click",function(event){
-			//event.stopPropagation();
+			event.stopPropagation();
 			console.log("grand child is invoked")
 			
 		})
-		document.getElementById("2").addEventListener("click",function(event){
-			console.log("child 2 is invoked")
-			//event.stopPropagation();
-		})
-		document.getElementById("2").addEventListener("click",function(event){
-			console.log("child 3 is invoked")
-			//event.stopPropagation();
-		})
-		document.getElementById("1").addEventListener("click",function(event){
-				//event.stopPropagation()
-				console.log("parent is invoked")
-		})
-
 	</script>
 
 </body>
