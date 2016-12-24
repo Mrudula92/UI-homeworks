@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Homework 21</title>
+	</head>
+	<body>
+	<div ng-app="app7">
+		<input ng-model="amount">
+
+		<div ng-controller="ctrl4"> 
+			Enter film name:{{film | lowercase}}<br/>
+			Enter film name:{{film | uppercase}}<br/>
+			<!--Enter amount:{{amount | currency }}<br/>
+			-->
+			Enter amount:{{amount | number:4 }}<br/>
+			{{'hi everyone '| reverse}}
+			<input ng-model="searchterm">
+
+			<div ng-repeat="item in array | filter:searchterm  " >{{item | reverse}}</div><br/>
+			<table>
+				<thead>
+					<tr>
+						<th>firstName</th>
+						<th>lastName</th>
+						<th>age</th>
+					</tr>
+				</thead>
+				<tbody >
+					<tr ng-repeat="list in array2 | orderBy:'-age'">
+						<td>{{list.firstName}}</td>
+						<td>{{list.lastName}}</td>
+						<td>{{list.age}}</td>
+					</tr>
+				</tbody>
+			</table>
+			
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<script>
+		angular.module("app7",[])
+		angular.module("app7").controller("ctrl4",["$scope",function($scope){
+			$scope.film="Eega";
+			$scope.array=["I","am","a","good","girl"]
+			$scope.array2=[
+			{
+				firstName:"Mrudula",
+				lastName:"Raparthi",
+				age:23
+			},
+			{
+				firstName:"Mrudu",
+				lastName:"Raps",
+				age:24
+			},
+			{
+				firstName:"Mru",
+				lastName:"Rapar",
+				age:25
+			},
+			{
+				firstName:"Mrudul",
+				lastName:"Raparth",
+				age:26
+			}
+			]
+			
+		}])
+		angular.module("app7").filter("reverse",function(){
+				return function(info){
+					if(info==''){return info}
+						if(info){
+							return info.split('').reverse().join('');
+						}
+				}
+			})
+	</script>
+	</body>
+</html>

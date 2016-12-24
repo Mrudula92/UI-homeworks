@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<div ng-app="App8">
+			<div ng-controller="ctrl1">
+				Firstname in ctrl1:<input ng-model="data.firstName">
+				Lastname in ctrl1:<input ng-model="data.lastName">
+			</div><br/>
+			<div ng-controller="ctrl2">
+				Firstname in ctrl2:<input ng-model="data2.firstName">
+				Lastname in ctrl2:<input ng-model="data2.lastName">
+			</div>
+
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<script>
+			angular.module("App8",[])
+			angular.module("App8").controller("ctrl1",function($scope,fac1){
+				/*console.log("Firstname in crtl1 is:" + fac1.firstName +" and lastname in ctrl1 is:"+fac1.lastName)
+				fac1.firstName="Changed name"*/
+				$scope.data=fac1;
+
+			})
+			angular.module("App8").controller("ctrl2",function($scope,serv1){
+				/*console.log("Firstname in crtl1 is:" + fac1.firstName +" and lastname in ctrl1 is:"+fac1.lastName)*/
+				/*$scope.data2=fac1;*/
+				console.log(serv1.add(10,20))
+				console.log(serv1.add(10,20))
+				
+			})
+			angular.module("App8").factory("fac1",function(){
+				return{
+					firstName:'Mrudula',
+					lastName:'Raparthi'
+				}
+				
+			})
+			angular.module("App8").service("serv1",function(){
+				this.add=function(a,b){
+					return a+b;
+				}
+			})
+			
+		</script>
+
+	</body>
+</html>
