@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homework-4</title>
+	<style>
+		div~p{
+			color:red;
+		}
+		.class1{
+			
+			border:5px solid black;
+			
+		}
+
+		@media screen and (max-width:600px){
+			.class1{
+				border:6px solid red;
+			}
+		}
+		@media screen and (min-width:600px) and (max-width:1500px){
+			.class1{
+				border:7px solid hotpink;
+				background-color: yellow;
+			}
+			}
+		p:hover{
+			background-color: purple;
+		}
+		p:active{
+			background-color: green;
+		}
+		.para{
+			display:none;
+			background-color: yellow:
+			border:1px solid red;
+			
+			padding:20px;
+		}
+		div:hover .para{
+			display:block;
+		}
+		
+	</style>
+</head>
+<body>
+	<div>This is div 1
+		<p>This is para1</p>
+		<p>this is para2
+			<span>this is span1</span>
+		</p>
+	</div> 
+	<div>This is div 2
+		<span>this is span2</span>
+	</div> 
+	<div class="class1">This is div 3</div> 
+	<div>This is div 4</div> 
+	<div>This is div 5
+	<p class="para">this is para5</p>
+	</div> 
+	<p>this is para6</p>
+
+</body>
+</html>

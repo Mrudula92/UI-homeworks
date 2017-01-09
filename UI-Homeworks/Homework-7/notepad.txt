@@ -1,0 +1,13 @@
+1) Try to understand sass pre processor:
+Sass (Syntactically Awesome StyleSheets) is an extension of CSS. Sass allows you to use things like variables, nested rules, inline imports and more. It also helps to keep things organized and allows you to create stylesheets faster.
+
+2) advantages of using sass?
+Advantages:
+Sass facilitates you to write clean, easy and less CSS in a programming construct.
+It contains fewer codes so you can write CSS quicker.
+It is more stable, powerful, and elegant because it is an extension of CSS. So, it is easy for designers and developers to work more efficiently and quickly.
+It is compatible with all versions of CSS. So, you can use any available CSS libraries.
+It provides nesting so you can use nested syntax and useful functions like color manipulation, math functions and other values.
+
+3) differences between sass less and stylus
+SASS and stylus has the same style of conditionals except the syntax is little more complicated in sass. In stylus it can be wriiten directly that is syntax is simpler than sass. LESS is completely different. They implement "Guards". In stylus there is no extra syntax to remember, no mixin duplication, just plian text that does exactly what you ask of it.

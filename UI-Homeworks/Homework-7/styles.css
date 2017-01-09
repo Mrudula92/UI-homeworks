@@ -1,0 +1,26 @@
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+p {
+  color: blue; }
+
+div {
+  border: 2px solid blue; }
+
+div p {
+  backgorund-color: blue; }
+
+.box1, .box2 {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+.box2 {
+  color: green; }
+
+/*# sourceMappingURL=styles.css.map */

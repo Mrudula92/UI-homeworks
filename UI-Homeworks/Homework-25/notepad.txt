@@ -1,0 +1,8 @@
+1) what is nodejs and why do we need to nodejs?
+Node.js is a runtime system for creating (mostly) server-side applications. It's best known as a popular means for JavaScript coders to build real-time Web APIs.
+Using Node js we can run javascript at the server side.
+
+2) implement single page appliction using ui.router,ngRoute?
+Using routing we implement single page applications. First inorder to develop SPA:
+we need to inject module
+before this we need to download ngRoute module

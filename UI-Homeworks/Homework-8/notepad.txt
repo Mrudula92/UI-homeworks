@@ -1,0 +1,108 @@
+1) why we use java script?
+JavaScript is a language that is executed by web browsers and is often used to make dynamic web pages.Javascript is used for:
+DOM() manipulation
+event handling
+AJAX
+
+2) what is dom manipulation?
+When a web page is loaded, the browser creates a Document Object Model of the page. The HTML DOM model is constructed as a tree of Objects.
+Manipulating/Changing the DOM means using this API to change the document (add elements, remove elements, move elements around etc...).
+Traversing the DOM means navigating it - selecting specific elements, iterating over groups of elements etc...
+
+3) what are events in a web page? how can you recognize them
+Events occur when some sort of interaction takes place in a web page. This can be the end user clicking on something, moving the mouse over a certain element or pressing down certain keys on the keyboard. An event can also be something that happens in the web browser, such as the web page completing the loading of a page, or the user scrolling or resizing the window.
+Through the use of JavaScript, you can detect when certain events happen, and cause things to occur in response to those events.
+
+4) java script data types.
+Javascript provides different datatypes to hold different kind of values. The two types of datatypes in Javascript are:
+1. Primitive Datatype
+2. Non-Primitive(reference) Datatype
+
+Javascript is a dynamice language. Here you need to use var to specify the type of data and dont need to specify type of variable because it is determined automatically while the program is being processed.
+
+There are five types of primitive datatypes in Javascript. They are:
+String
+Number
+Boolean
+Undefined
+Null
+
+The non-primitive datatypes are:
+Object
+Array
+RegExp
+
+Examples:
+var a=10;
+Here the datatype is number
+var name="mrudula"; retuns string
+var b=10 + "m";  returns string
+var c="10"+"m";  retuns string
+var d;  returns undefined
+var e=true; returns boolean
+var num=["1","2","3"] retuns object
+var f=null;  returns object
+
+
+References:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures
+http://www.javatpoint.com/javascript-data-types
+http://www.w3schools.com/js/js_datatypes.asp
+https://msdn.microsoft.com/en-us/library/7wkd9z69(v=vs.94).aspx
+http://archive.oreilly.com/pub/a/javascript/excerpts/learning-javascript/javascript-datatypes-variables.html
+
+5) conditions and loops:
+LOOPS:
+
+for: This loop is executed till a specified condition returns false. It has basically the same syntax as in other languages. It takes 3 arguments like initialization, condition and increment.
+Syntax: for (initialization; condition; increment) 
+
+            {
+               // code to be executed
+            }
+while: This is the mostly used loop after For loop. The while statement repeats a loop as long as a specified condition evaluates to true. If the condition becomes false, the statements within the loop stop executing and control passes to the statement following the loop.
+Syntax: while(condition)
+         {
+            //code to be executed
+         }
+do while: This statement repeats until a specified condition evaluates to false. In this the statement gets executedonce before checking the condition.
+Syntax: do{
+		//code to be executed
+		}while(condition);
+
+References:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#do...while_statement
+https://www.tutorialspoint.com/javascript/javascript_for_loop.htm
+http://www.w3schools.com/js/js_loop_for.asp
+http://webcheatsheet.com/javascript/loops.php
+http://www.tizag.com/javascriptT/javascriptfor.php
+
+Conditions:
+
+if else: The If statement executes the statement if condition is true or it will execute the else statement
+Syntax:if(condition){
+	    //statement to be executed
+        }
+        else{
+        //statement to be executed
+        }
+switch: The switch statement is used to perform different actions based on different conditions.In this the expression is evaluated first. If the expression value matches value of case then the block of statements in that case will be executed. break must be used to switch to different case.
+Syntax:switch(expression){
+       case 1:
+       	//block of statements;
+       	break;
+       case 2:
+        //block of statements;
+        break;
+       default:
+        //default statement;
+       break;
+       }
+
+References:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch
+http://www.javascriptkit.com/javatutors/switch.shtml
+https://www.tutorialspoint.com/javascript/javascript_ifelse.htm
+http://www.w3schools.com/js/js_switch.asp
+http://www.tutorialspoint.com/javascript/javascript_switch_case.htm
+

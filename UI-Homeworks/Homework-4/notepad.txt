@@ -1,0 +1,23 @@
+1) Media Queries :
+Media query is used to include a block of CSS properties only if certain condition is true. We use @media and will provide minimum or maximum width where the properties should be applied.
+
+2) Psuedo Classes and Psuedo Elements
+Pseudo classes are used to define a specific state of an element
+we use ":" syntax like p:hover
+Pseudo elements are part of element being selected.
+we use "::" syntax like p::after
+
+3) CSS BOX Model & sizing
+CSS Cox Model is a box that wraps around evry HTML element. It consists of margins, borders, padding and the actual content.
+Content - The content of the box, where text and images appear
+Padding - Clears an area around the content. The padding is transparent
+Border - A border that goes around the padding and content
+Margin - Clears an area outside the border. The margin is transparent
+Display Properties:
+These properties specifies how an element is displayed. Evry HTML element will have a default dispay property dependong on what type of element it is like block or inline.
+A block level element always starts on a new line whereas an inline element does not start on a new line.
+<span>, <a>, <img> are inline elements.
+
+4) differences between display none and visibility hidden property
+display none will hide an element and the page will be displayed as if the element is not there.
+visibility hidden also hides an element but the element will still take up the same space as before.

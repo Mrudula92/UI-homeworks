@@ -1,0 +1,24 @@
+npm commands? all of them? explain them with options?
+npm is a NodeJS package manager.It makes easy to specify and link dependencies. We use commands to download modules.
+--npm install moduleName
+--npm install express
+Using these commands new folder is created and folder express.
+
+package.json? what are diff parts of package.json file?
+If more npm modules are needed instead of running the commands many times we can use package.json. The package.json file goes in the root of your package. It tells npm how your package is structured, and what to do to install it. We need the "name", "version", and "main" fields
+
+diff between dependencies and dev-dependencies?
+dependecies--these are used while running the program
+dev-dependencies--these are used as a part of build process
+
+MEAN stack?
+MEAN is a collection of JavaScript-based technologies — MongoDB, Express.js, AngularJS, and Node.js — used to develop web applications. From the client and server sides to databases, MEAN is a full-stack development toolkit.
+
+ how to develop web services in node? routing?
+ routing is observing changes in url and updating a path of the page.
+ webservices can be ddeveloped using modules.
+ import a http module
+ using http create a server
+ we hav a response handler for the server request response parameters
+ listen to the server
+

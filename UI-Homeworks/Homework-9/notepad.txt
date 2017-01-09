@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
  Operational Precedence:
  It describes the order in which operations are performed when an expression is evaluated. The higher precedence operations are evaluated before lower precedence operations are done. It is particularly used when solving equations. Operators with same precedence are evaluated left to right. Expression evaluation also influenced by operator associativity. Associativity means the direction in which entire expression is evaluated.
 
@@ -268,4 +268,4 @@ https://www.tutorialspoint.com/javascript/javascript_ifelse.htm
 http://www.w3schools.com/js/js_switch.asp
 http://www.tutorialspoint.com/javascript/javascript_switch_case.htm
   
->>>>>>> b4794c10c116b7ef81f65e64feb7ab844a6bbed3
+

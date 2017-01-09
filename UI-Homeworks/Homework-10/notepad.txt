@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 Logical AND & Logical OR:
 Logical operators are used with Boolean values.That is they can have values true or false. The AND and OR operators actually return the value of one of the specified operands, so if these operators are used with non-Boolean values, they may return a non-Boolean value.
 

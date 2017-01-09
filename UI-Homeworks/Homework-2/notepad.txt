@@ -1,0 +1,17 @@
+1) what are semantic element? why do we need to use sematic elements? advantages?
+Semantic elements are elements with meaning. These tags are added to provide more meaning to the content inside the elements whereas non-semantic elements provide no information about the content.This clearly describes meaning to both browser and developer.
+HTML 5 offers new semantic elements to define different parts of a web page:
+<article>--This element specifies independent, self-contained content. It should be possible to read it independently from the rest of the web site.
+<aside>--This element defines some content aside from the content it is placed in. It should be related to the surrounding content.
+<section>-- This element defines section in a document. It is grouping of content typically with a heading.
+<header>--This element specifies a header for a document or section. It should be used as a container for introductory content.
+<footer>-- This element specifies a footer for a documentation or section. Usually it contains the author of the document,copyright info, links and so on.
+<nav>--This element defines a set of navigation links
+<figcaption>--This element is used to add a visual explanation to an image.
+<figure>--This element groups an image and caption in html5
+<time>--This element defines a date/time
+<summary>--This element defines a visible heading for a details element.
+<details>--This tag specifies additional details that the user can view or hide on demand.
+<mark>--This tag defines marked text.
+<main>--This tag specifies the main content of a document.
+

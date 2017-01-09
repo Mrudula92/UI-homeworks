@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<div ng-app="myApp">
+			<header>this is a header</header>
+			<div ng-controller="ctrl">
+			
+				<ng-view></ng-view>
+
+			</div>
+			<footer>this is a footer</footer>
+		</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.min.js"></script>
+	<script>
+		angular.module("myApp",["ngRoute"])
+		angular.module("myApp").config(["$routeProvider",function($routeProvider){
+			$routeProvider
+				.when('/',{
+					template:"this is a home route"
+				})
+				.when('/about',{
+					template:"this is a about route"
+				})
+				.when('/contact',{
+					template:"this is a contact route"
+				})
+				.otherwise({
+					redirectTo: '/'
+				})
+
+			
+		}])
+		angular.module("myApp").controller("ctrl",function($scope){
+
+		})
+	</script>
+
+	</body>
+</html>

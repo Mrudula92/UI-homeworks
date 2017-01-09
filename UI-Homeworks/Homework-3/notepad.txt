@@ -1,0 +1,9 @@
+CSS Selectors:
+These are the patterns used to select the elements which needs style.
+.class--this selector selects all elements with same class name.
+#id--selects all elements with same id
+element1,element2--selects all element1 elements and element2 elements
+element1 element2--selects all element2 elements inside element1 like child,grand child, great grand child
+element1>element2--selects all element2 elements where element2 is direct child of element1
+element1+element2--selects all element2 placces immediately after element1
+element1~element2--selects all element2 that are precedeed by element1

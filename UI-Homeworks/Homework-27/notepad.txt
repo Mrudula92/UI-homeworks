@@ -1,0 +1,13 @@
+what is grunt?
+Grunt is used for automation,repetitive works like minification and so on.
+
+How can you configure tasks in grunt? what is initConfig, registerTask?
+Configuration is provided in gruntfile.js.
+grunt.initconfig-- here we define all tasks configurtion
+grunt.registerTask--make it available as commands.
+
+what is bower? understand following commands and expalin about?
+Bower is a package manager. It can manage components that contain HTML, CSS, Javascript, fonts or even image files. It fetches and installs packages.
+bower init -- it creates bower.json file
+bower install -- it installs packages to bower_components.
+bower install package --save new dependencies to bower.json

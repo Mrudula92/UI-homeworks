@@ -1,0 +1,13 @@
+1) What is bootstrap ? 
+Bootstrap is a front end framework used for easier and faster front end development. It is useful in making webpages responsive that is it adjusts automatically according to the size of the screen.
+It can be downloaded or can be used from CDN. It contains pre defined classes which helps in develping easily. It includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation and so on.
+
+2) what is grid system in bootstrap? for 1 row how many columns do we have in bootstrap?
+Bootstrap grid system is something which divides the page into rows and columns. 1 row contains 12 columns. W e can instruct an element to occupy anywhere between 1 to 12 columns.
+
+3) what is xs, sm , lg, md ? implement an example in using bootstrap?
+The Bootstrap grid system has four classes:
+xs--for phones--480px to 768px
+sm--for tablets--768px to 992px
+md--for desktops--992px to 1200px
+lg--for larger desktops--1200px +
