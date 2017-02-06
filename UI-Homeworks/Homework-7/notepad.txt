@@ -11,3 +11,4 @@ It provides nesting so you can use nested syntax and useful functions like color
 
 3) differences between sass less and stylus
 SASS and stylus has the same style of conditionals except the syntax is little more complicated in sass. In stylus it can be wriiten directly that is syntax is simpler than sass. LESS is completely different. They implement "Guards". In stylus there is no extra syntax to remember, no mixin duplication, just plian text that does exactly what you ask of it.
+

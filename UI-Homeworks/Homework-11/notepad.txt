@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 Explain about arr.forEach and arr.map . compare the differences?
 forEach: This method will invoke the function for every item in the array.
 Syntax: arr.forEach(function(item,index,arrRef){

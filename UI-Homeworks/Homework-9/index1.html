@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="basket-product-row">
+		
+	<select id="estSelect">
+	  <option value="10">10$</option>
+	  <option value="20">20$</option>
+	  <option value="30">30$</option>
+	  <option value="40">40$</option>
+	</select>
+
+	</div>
+
+	<div id="subtotal">200$</div>
+	EST cost: 
+	<div id="estcost"></div>
+	Summary total 
+	<div id="summary-total"></div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<script>
+		function update(){
+        	alert('changed');
+        	 
+			var subtotal = $('#subtotal').text().replace('$',''); 
+			console.log(subtotal);
+			
+			var stax = 0; 
+			var shipcost = $("#estSelect").find(":selected").val(); 
+			console.log("shipcost",shipcost);
+			var shipcostnum = Number(shipcost).toFixed(2); 
+			var ordertotalest = (stax + Number(subtotal) + Number(shipcost)).toFixed(2); 
+			console.log(Number(stax)+Number(subtotal)+Number(shipcost));
+			console.log("ordertotalest",ordertotalest);
+			
+			$('#estcost').text('$' + shipcostnum); 
+			$('#summary-total').text(ordertotalest + "$"); 
+		}
+			
+
+    	$('.basket-product-row').on('change', '#estSelect', update);
+    	//update();
+    </script>
+</body>
+</html>

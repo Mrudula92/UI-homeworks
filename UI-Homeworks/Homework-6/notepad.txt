@@ -11,3 +11,7 @@ xs--for phones--480px to 768px
 sm--for tablets--768px to 992px
 md--for desktops--992px to 1200px
 lg--for larger desktops--1200px +
+
+
+http://sixrevisions.com/css/css-specificity/---chech this for specificity
+
